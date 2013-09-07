@@ -62,7 +62,7 @@
             width: 200px;
             height: 60px;
             position: relative;
-            border: 1px solid gray;
+            /*border: 1px solid #dbdbdb;*/
         }
         .arrow_box:after, .arrow_box:before {
             left: 100%;
@@ -82,7 +82,7 @@
         }
         .arrow_box:before {
             border-color: rgba(212, 212, 212, 0);
-            border-left-color: gray;
+            border-left-color: #dbdbdb;
             border-width: 30px;
             top: 50%;
             margin-top: -30px;
@@ -180,13 +180,6 @@
             background-image: linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
         }
 
-        .popover.left .arrow{
-            top:25%;
-        }
-
-        .popover{
-            margin-top: 50px;
-        }
         #save{
             margin-right: 15px;
         }
