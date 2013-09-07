@@ -15,7 +15,7 @@ $(function () {
         endIndex = total; //End index;
 
     //create popop to save stage
-    var $pop = bindPopOp();
+    var pop = bindPopOp();
     $('body').on('click',function(event){
 
         if($(event.target).hasClass("stageDiv")){
@@ -42,18 +42,18 @@ $(function () {
             
             var name = $('#stageName').val();
             var color = randomColor();
-            $pop.popover("hide");
+            pop.popover("hide");
             saveStage(name,color,false);
 
         }else if($(event.target).hasClass("cancel")){
             
             newStage=true;
-            $pop.popover("hide");
+            pop.popover("hide");
 
         }else if($(event.target).hasClass("addStage")){
             
             if(newStage==true){
-                $pop.popover("show");    
+                pop.popover("show");    
                 newStage = false;
             }
 
