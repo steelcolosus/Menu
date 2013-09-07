@@ -91,7 +91,7 @@ $(function ()
         var popopOptions = 
             {
                 html: true,
-                placement: 'bottom',
+                placement: 'left',
                 trigger: 'manual',
                 title: 'Create new stage',
                 content: form

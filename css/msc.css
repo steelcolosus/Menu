@@ -62,7 +62,7 @@
             width: 200px;
             height: 60px;
             position: relative;
-            /*border: 1px solid #dbdbdb;*/
+            /*border: 1px solid gray;*/
         }
         .arrow_box:after, .arrow_box:before {
             left: 100%;
@@ -180,6 +180,13 @@
             background-image: linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
         }
 
+        .popover.left .arrow{
+            top:25%;
+        }
+
+        .popover{
+            margin-top: 60px;
+        }
         #save{
             margin-right: 15px;
         }
