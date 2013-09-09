@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/msc.js"></script>
-
 	<style type="text/css">
 
 		@import url('css/msc.css');
@@ -35,9 +34,9 @@
     		<button id="addStage" class="btn btn-default btn-lg glyphicon glyphicon-plus pull-right addStage" type='button' data-toggle='popover'></button>
         </div>
         <div class="panel-body">
-
+        	<!-- Side menu for Tools and Activities-->
     	    <div class="col-lg-2 vertNav pull-left">
-		        <ul id="userSideNav" class="nav nav-list bs-docs-sidenav">
+		        <ul  class="nav nav-list bs-docs-sidenav userSideNav">
 		            <li>
 		            	<a href="#">
 		               		 <span class="glyphicon glyphicon-calendar"></span>&nbsp;Activities&nbsp;
@@ -52,15 +51,40 @@
 		            </li>
 		        </ul>
 		    </div>
-		    <div class="col-lg-3  pull-left">
-		    	menu 2
+		    <!-- End -->
+		    <!-- Side menu for Events activities-->
+		    <div class="col-lg-3 vertNav  pull-left">
+		    	<ul class="nav nav-list bs-docs-sidenav userSideNav">
+		    		<li>
+		    			<!--  Collapsable panell  for requiered activities-->
+		    			<a href="#collapseRequired" data-toggle="collapse" class="accordion-toggle">
+		    				REQUIRED ACTIVITIES
+		    			</a>
+		    			<div id='collapseRequired' class="panel-collapse collapse in" >
+		    				<div class="panel-body collapse-body-content">
+	    						<a href="#">
+		               				Activitie 1&nbsp; <span class="glyphicon glyphicon-chevron-right pull-right"></span>
+		           				</a>
+	    						<a href="#">
+		               				Activitie 2&nbsp; <span class="glyphicon glyphicon-chevron-right pull-right"></span>
+		           				</a>
+		    				</div>
+		    			</div>
+		    			<!--  End  -->
+		    		</li>
+		    	</ul>
 		    </div>
+		    <!-- End -->
+		    <!--  Content for Activities-->
 		    <div class="col-lg-4  pull-left">
 		    	content
 		    </div>
+			<!--  End  -->
+			<!--  Notes content  -->
 		    <div class="col-lg-3  pull-lefts">
 		    	content 2
 		    </div>
+		    <!--  End  -->
         </div>
     </div>
 </div>
