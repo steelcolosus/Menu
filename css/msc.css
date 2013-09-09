@@ -176,6 +176,7 @@
         .userSideNav li a:hover {
             background-color: #666666;
         }
+        
         /*Collapsable menus*/
         .accordion-toggle{
             display: block;
