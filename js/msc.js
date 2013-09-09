@@ -77,7 +77,7 @@ $(function ()
 
     function bindPopOp()
     {
-        var form = $("<form role='form' action='#' method='get'>")
+        var form = $("<div id='newStageDiv' >")
                     .append($("<div class='form-group' name='stageName'>")
                         .append($("<label for='stageName'>Name</label>"))
                         .append($("<input type='text' id='stageName' name='stageName' class='form-control' placeholder='Stage Name'/>")))
