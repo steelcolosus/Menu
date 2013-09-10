@@ -3,7 +3,7 @@ $(function ()
     var stageList = Array(),//List of stages to build the menu
         stageSize = 200,//Size of the stage box
         menu = $('#stages'),//Container of the stages
-        size = stageList.length-1,//size of the stages list
+        size = stageList.length-1==0?1:stageList.length,//size of the stages list
         total = size,//Actual total stages
         stageContainerSize = size*(stageSize),//Stage container size
         stageDiv = stageList.length,
