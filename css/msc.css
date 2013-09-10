@@ -143,6 +143,7 @@
         .panel-body{
             padding: 0px;
         }
+
         /*Vertical side menus*/
         .vertNav {
             padding: 0px;
@@ -152,37 +153,31 @@
             background-color: #3D3D3D;
             border-right: 2px solid #0A0A0A;
         }
-
+        .userSideNav a{
+            display: block;
+            text-decoration:none;
+            text-shadow: 0 1px 0 #474747;
+             color: white;
+            font-weight:bold;
+        }
         .userSideNav li{
             margin: 0px;
             height: 34px;
-            /*border-top: 1px solid #717171;*/
-            /* inner stroke */
             border-bottom: 1px solid #0A0A0A;
-            /* inner stroke */
             background-color: #3D3D3D;
 
         }
-        .userSideNav li a{
-            display: block;
-            color: white;
-            /* text color */
-            text-shadow: 0 1px 0 #474747;
-            /* drop shadow */
-            text-decoration:none;
-            font-weight:bold;
-        }
 
-        .userSideNav li a:hover {
+        .userSideNav li a:hover, .collapse-body-content a:hover {
             background-color: #666666;
         }
         
         /*Collapsable menus*/
-        .accordion-toggle{
-            display: block;
+        a.accordion-toggle{
             padding: 5px;
             background-color: #0A0A0A;
             color: gray;
+            font-weight:bold;
         }
 
         .collapse-body-content a {
@@ -190,8 +185,11 @@
             border-radius: 5px;
             margin: 5px;
             padding: 5px;
-            
+            color: white;
+            font-weight: normal;
         }
+
+        /*popop*/
         .popover.left .arrow{
             top:25%;
         }
