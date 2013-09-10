@@ -1,12 +1,11 @@
 $(function () 
 {
-    var stageList = Array(),
-        newStage = true,
-        stageSize = 200,
-        menu = $('#stages'),
-        size = stageList.length,
-        total = size-1,
-        stageContainerSize = size*(stageSize),
+    var stageList = Array(),//List of stages to build the menu
+        stageSize = 200,//Size of the stage box
+        menu = $('#stages'),//Container of the stages
+        size = stageList.length-1,//size of the stages list
+        total = size,//Actual total stages
+        stageContainerSize = size*(stageSize),//Stage container size
         stageDiv = stageList.length,
         index = 0, //Starting index
         endIndex = total; //End index;
@@ -22,6 +21,7 @@ $(function ()
             offL,
             name,
             color;
+
 
         if($(event.target).hasClass("stageDiv"))
         {
@@ -113,11 +113,13 @@ $(function ()
         total = size;
 
         $('.stageDiv').each(
+
             function(index,stage)
             {
                 $(stage).css('z-index',total);
                 total-=1;
             }
+
         );
 
         addItemMenu(size+". "+name,color,true);
